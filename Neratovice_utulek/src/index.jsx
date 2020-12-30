@@ -1,17 +1,23 @@
 import React from 'react';
 import { render } from 'react-dom';
 import './index.html';
-import "./styles.scss";
+import './styles.scss';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-render(
-  <>
-    <header>
-      <h1>React Starter</h1>
-    </header>
-    <main>
-      <p>Moje první React stránka</p>
-    </main>
-    <footer>Martin Podloucký</footer>
-  </>,
-  document.querySelector('#app'),
-);
+const App = () => {
+  return (
+    <>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/k-adopci"></Route>
+          <Route path="/nasli-domov"></Route>
+          <Route path="/o-nas"></Route>
+          <Route path="/pomohli-nam"></Route>
+          <Route path="/" component={Homepage} />
+        </Switch>
+      </BrowserRouter>
+    </>
+  );
+};
+
+render(<App />, document.querySelector('#app'));
