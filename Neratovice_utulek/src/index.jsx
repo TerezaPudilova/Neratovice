@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import './index.html';
 import './styles.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Homepage } from './components/Homepage.jsx';
 
 const App = () => {
   return (
