@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Card = (props) => {
+export const Card = (props) => {
   const name = props.name
   const sex = props.sex
   const age = props.age
@@ -26,4 +26,3 @@ const Card = (props) => {
   )
 }
 
-export default Card;

@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { Menu } from 'Menu.jsx';
-import { Footer } from 'Footer.jsx';
-import { ListofCards } from 'ListofCards.jsx';
-import { FrequentedQuestions } from 'FrequentedQuestion.jsx';
+import { Menu } from './Menu';
+import { Footer } from './Footer';
+import { ListofCards } from './ListofCards';
+import { FrequentedQuestions } from './FrequentedQuestions';
 
-const Homepage = (props) => {
+export const Homepage = (props) => {
   const article = props.article;
   return (
     <>
-      <div>{Menu}</div>
+      <Menu/>
       <div>
         <div>
           <h1>Pomohli jsme najít domov už 50 mazlíkům</h1>
@@ -21,20 +21,19 @@ const Homepage = (props) => {
           <img></img>
         </div>
       </div>
-      <div>{ListofCards}</div>
+      <ListofCards/>
       <div>
         <h2>V poslední době se stalo</h2>
         <div>
-          <div>{article}</div>
+          <div>Článek</div>
         </div>
       </div>
       <div>
         <h2>Nejčastější otázky</h2>
-        <div>{FrequentedQuestions}</div>
+        <FrequentedQuestions/>
       </div>
-      <div>{Footer}</div>
+      <Footer/>
     </>
   );
 };
 
-export default Homepage;
