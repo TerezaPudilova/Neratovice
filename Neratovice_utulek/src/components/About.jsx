@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { Article } from './Article';
 import { Footer } from './Footer';
 import { Menu } from './Menu';
+import '../styles.scss';
 
 export const About = () => {
   return (
     <>
+    <div className="wrapper">
       <Menu />
       <div>
         <h2>Dáváme mazlíkům druhou šanci od roku 1999</h2>
@@ -27,6 +29,7 @@ export const About = () => {
         <div>Bankovní účet</div>
       </div>
       <Footer/>
+      </div>
     </>
   );
 };

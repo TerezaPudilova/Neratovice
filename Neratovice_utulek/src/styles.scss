@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$text: O NÁS;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h3,
+h2,
+h1 {
+  color: #00b2ff;
+}
+
+.wrapper {
+  background-color: #fefefe;
+  padding: 32px; 
+}
+
+.menu {
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .menu-link {
+    color: #00b2ff;
+    text-align: center;
+    text-decoration: none;
+    padding: 4px;
+  }
+}
+
+.landing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .landing-text {
+    padding-top: 72px;
+    button {
+      border-radius: 4px;
+      border-color: #ff8a00;
+      @if $text == O NÁS {
+        color: #ff8a00;
+      } @else {
+        background-color: #ff8a00;
+        color: white;
+      }
+    }
+  }
+}
+
+.card {
+  max-width: 400px;
+  max-height: 736px;
+  background-color: white;
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+.list-of-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.article {
+  font-size: 16px;
+  h5 {
+    color: #00b2ff;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+}
+
+.basic-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .mail {
+    text-decoration: none;
+    color: #ff8a00;
+  }
+}

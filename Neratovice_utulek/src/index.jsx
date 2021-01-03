@@ -8,6 +8,7 @@ import { Adoption } from './components/Adoption';
 import { Adopted } from './components/Adpoted';
 import { About } from './components/About';
 import { Sponzors } from './components/Sponzors';
+import './styles.scss'
 
 const App = () => {
   return (
