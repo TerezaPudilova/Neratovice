@@ -3,6 +3,8 @@ import { Menu } from './Menu';
 import { Footer } from './Footer';
 import { ListofCards } from './ListofCards';
 import { FrequentedQuestions } from './FrequentedQuestions';
+import {Article} from './Article'
+import landing from '../assets/landing.jpg'
 
 export const Homepage = (props) => {
   const article = props.article;
@@ -18,14 +20,14 @@ export const Homepage = (props) => {
           </div>
         </div>
         <div>
-          <img></img>
+          <img src={landing}></img>
         </div>
       </div>
       <ListofCards/>
       <div>
         <h2>V poslední době se stalo</h2>
         <div>
-          <div>Článek</div>
+          <Article/>
         </div>
       </div>
       <div>

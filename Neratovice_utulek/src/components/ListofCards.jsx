@@ -7,7 +7,10 @@ export const ListofCards = (props) => {
   return (
     <>
       <div>
-         <Card/>
+         <Card 
+         name="Frederico"
+         sex="male"
+         race="Kříženec"/>
       </div>
     </>
   )
