@@ -18,11 +18,11 @@ export const Homepage = () => {
             <h1>Pomohli jsme najít domov už 50 mazlíkům</h1>
             <div>
               <Link to="/k-adopci">
-                <button>K ADOPCI</button>
+                <button className="button button-primary">K ADOPCI</button>
               </Link>
 
               <Link to="/o-nas">
-                <button>O NÁS</button>
+                <button className="button button-secondary">O NÁS</button>
               </Link>
             </div>
           </div>
