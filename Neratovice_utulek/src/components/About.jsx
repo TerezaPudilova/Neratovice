@@ -8,6 +8,7 @@ export const About = () => {
   return (
     <>
     <div className="wrapper">
+      <div className="innerwrapper">
       <Menu />
       <div>
         <h2>Dáváme mazlíkům druhou šanci od roku 1999</h2>
@@ -29,6 +30,7 @@ export const About = () => {
         <div>Bankovní účet</div>
       </div>
       <Footer/>
+      </div>
       </div>
     </>
   );

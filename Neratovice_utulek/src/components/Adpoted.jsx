@@ -8,10 +8,12 @@ export const Adopted = () => {
   return (
     <>
       <div className="wrapper">
-        <Menu />
-        <h2>Pomohli jsme najít domov 93 mazlíkům</h2>
-        <ListofCards />
-        <Footer />
+        <div className="innerwrapper">
+          <Menu />
+          <h2>Pomohli jsme najít domov 93 mazlíkům</h2>
+          <ListofCards />
+          <Footer />
+        </div>
       </div>
     </>
   );
