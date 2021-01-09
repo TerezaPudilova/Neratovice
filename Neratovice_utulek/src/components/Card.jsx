@@ -5,8 +5,10 @@ import race1 from '../assets/race1.svg';
 import age1 from '../assets/age1.svg';
 import '../styles.scss';
 
+
 export const Card = (props) => {
-  const name = props.name;
+
+  const name = props.name
   const sex = props.sex;
   const age = props.age;
   const race = props.race;
