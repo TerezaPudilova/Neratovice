@@ -18,7 +18,7 @@ export const ListofArticles = () => {
 
   return (
     <>
-      <div>{articles.map((article) => renderArticle(article))}</div>
+      <div className="articleList">{articles.map((article) => renderArticle(article))}</div>
     </>
   );
 };

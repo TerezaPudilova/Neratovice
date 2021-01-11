@@ -35,11 +35,12 @@ export const Homepage = () => {
             <h2>Aktuálně čeká na adopci 12 mazlíků</h2>
             <ListofCards />
           </div>
-          <div>
+          <div className="middle">
             <h2>V poslední době se stalo</h2>
+            
             <ListofArticles />
           </div>
-          <div>
+          <div className="middle">
             <h2>Nejčastější otázky</h2>
             <FrequentedQuestions />
           </div>

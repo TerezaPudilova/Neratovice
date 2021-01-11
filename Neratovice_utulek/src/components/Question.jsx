@@ -9,7 +9,7 @@ export const Question = (props) => {
 
   return (
     <>
-    <div>
+    <div className="question">
       <div>
         <img src={money} width="64" height="54"></img>
       </div>

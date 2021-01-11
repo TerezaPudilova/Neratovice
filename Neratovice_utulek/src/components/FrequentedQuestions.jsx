@@ -23,7 +23,7 @@ const renderQuestion = (a) => {
 
   return (
     <>
-      <div>
+      <div className="questionList">
          {questions.map((question) => (renderQuestion(question)))}
       </div>
     </>

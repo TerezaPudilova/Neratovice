@@ -94,6 +94,7 @@ h1 {
   max-width: 400px;
   max-height: 736px;
   background-color: white;
+  margin-right: 16px;
   div {
     display: flex;
     flex-direction: row;
@@ -119,7 +120,8 @@ h1 {
 .list-of-cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  
 }
 
 .list-of-cards-wrapper {
@@ -127,6 +129,9 @@ h1 {
 }
 
 .article {
+  max-width: 360px;
+  margin-left: 16px;
+  text-align: left;
   @extend %pismo;
   h5 {
     @extend %blue;
@@ -142,4 +147,28 @@ h1 {
     text-decoration: none;
     @extend %orange;
   }
+}
+
+.middle {
+  text-align: center;
+}
+
+.articleList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.questionList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 80px 40px 80px;
+}
+
+.question {
+  text-align: left;
+  margin-left: 12px;
+  max-width: 440px;
 }
