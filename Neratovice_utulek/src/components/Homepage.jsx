@@ -3,10 +3,10 @@ import { Menu } from './Menu';
 import { Footer } from './Footer';
 import { ListofCards } from './ListofCards';
 import { FrequentedQuestions } from './FrequentedQuestions';
-import { Article } from './Article';
 import landing from '../assets/landing.jpg';
 import { Link } from 'react-router-dom';
 import '../styles.scss';
+import { ListofArticles } from './ListofArticles';
 
 export const Homepage = () => {
   return (
@@ -37,9 +37,7 @@ export const Homepage = () => {
           </div>
           <div>
             <h2>V poslední době se stalo</h2>
-            <div>
-              <Article />
-            </div>
+            <ListofArticles />
           </div>
           <div>
             <h2>Nejčastější otázky</h2>

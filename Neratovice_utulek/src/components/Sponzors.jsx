@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Article } from './Article';
 import { Footer } from './Footer';
+import { ListofArticles } from './ListofArticles';
 import { Menu } from './Menu';
 
 export const Sponzors = () => {
@@ -10,7 +11,7 @@ export const Sponzors = () => {
         <div className="innerwrapper">
           <Menu />
           <h2>Děkujeme všem, kteří nám podali pomocnou ruku</h2>
-          <Article />
+          <ListofArticles />
           <div>Bankovní účet</div>
           <Footer />
         </div>

@@ -3,6 +3,7 @@ import { Article } from './Article';
 import { Footer } from './Footer';
 import { Menu } from './Menu';
 import '../styles.scss';
+import { FrequentedQuestions } from './FrequentedQuestions';
 
 export const About = () => {
   return (
@@ -27,6 +28,7 @@ export const About = () => {
           kroužky z Neratovic a okolí.
         </p>
         <Article/>
+        <FrequentedQuestions />
         <div>Bankovní účet</div>
       </div>
       <Footer/>
