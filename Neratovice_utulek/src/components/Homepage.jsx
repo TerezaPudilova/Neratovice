@@ -4,11 +4,26 @@ import { Footer } from './Footer';
 import { ListofCards } from './ListofCards';
 import { FrequentedQuestions } from './FrequentedQuestions';
 import landing from '../assets/landing.jpg';
+import arrowLeft from '../assets/arrowLeft.svg';
+import arrowRight from '../assets/arrowRight.svg';
 import { Link } from 'react-router-dom';
 import '../styles.scss';
 import { ListofArticles } from './ListofArticles';
+import { db } from '../db';
 
 export const Homepage = () => {
+const [adopted, setAdopted] = useState([]);
+const [pets, setPets] = useState([{}]);
+
+useEffect(() => {
+  db.collection('ListOfAdoptedPets').onSnapshot((query) => {
+    setAdopted(query.docs.map((doc) => doc.data()))
+  });
+  db.collection('ListOfPets').onSnapshot((query) => {
+    setPets(query.docs.map((doc) => doc.data()))
+  })
+ }, [])
+
   return (
     <>
       <div className="wrapper">
@@ -16,7 +31,7 @@ export const Homepage = () => {
           <Menu />
           <div className="landing">
             <div className="landing-text">
-              <h1>Pomohli jsme najít domov už 50 mazlíkům</h1>
+              <h1>Pomohli jsme najít domov už {adopted.length} mazlíkům</h1>
               <div>
                 <Link to="/k-adopci">
                   <button className="button button-primary">K ADOPCI</button>
@@ -33,12 +48,21 @@ export const Homepage = () => {
           </div>
           <div>
             <h2>Aktuálně čeká na adopci 12 mazlíků</h2>
-            <ListofCards />
+            <ListofCards 
+            pets = {pets}
+            />
           </div>
           <div className="middle">
             <h2>V poslední době se stalo</h2>
-            
             <ListofArticles />
+            <div>
+              <button className="button button-primary">
+                <img src={arrowLeft}></img>
+              </button>
+              <button className="button button-primary">
+              <img src={arrowRight}></img>
+              </button>
+            </div>
           </div>
           <div className="middle">
             <h2>Nejčastější otázky</h2>

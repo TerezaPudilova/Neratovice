@@ -34,6 +34,14 @@ h1 {
   @extend %blue;
 }
 
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
 .wrapper {
   padding: 40px;
   width: 100%;
@@ -43,7 +51,7 @@ h1 {
 }
 
 .innerwrapper {
-  background-color: #fefefe;
+  background-color: #FFFFFF;
   width: 1440px;
   margin: auto;
 
@@ -72,23 +80,25 @@ h1 {
 }
 
 .button {
-  border-radius: 4px;
+  border-radius: 8px;
   @extend %orange;
   border-style: solid;
   border-width: 1px;
   @extend %pismo;
   padding: 12px 20px;
   height: 48px;
+  border-color: #ff8a00;
   &-primary {
-    @extend %orange;
-  }
-  &-secondary {
     background-color: #ff8a00;
     color: white;
-    margin: 20px;
+    margin: 10px;
   }
-
-}
+  &-secondary {
+    @extend %orange;
+    background-color: white;
+    margin: 10px;
+  }
+ }
 
 .card {
   max-width: 400px;
@@ -105,11 +115,11 @@ h1 {
       flex-direction: column;
     }
   }
-  h3 {
+  h2 {
     text-align: left;
     color: black;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 24px;
   }
   p {
     font-size: 12px;
@@ -120,7 +130,8 @@ h1 {
 .list-of-cards {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
   
 }
 

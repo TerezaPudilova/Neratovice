@@ -19,7 +19,7 @@ export const Card = (props) => {
     <>
       <div className="card">
         <img src={pes} width="400" height="400"></img>
-        <h3>{name}</h3>
+        <h2>{name}</h2>
         <div>
           <div>
             <img src={sex1}></img>

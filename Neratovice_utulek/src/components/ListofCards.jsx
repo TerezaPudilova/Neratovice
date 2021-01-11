@@ -1,18 +1,12 @@
 import { Card } from './Card';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../styles.scss';
-import { db } from '../db';
-
-export const ListofCards = () => {
-  const [pets, setPets] = useState([{}]);
 
 
-  useEffect(() => {
-    db.collection('ListOfPets').onSnapshot((query) => {
-      setPets(query.docs.map((doc) => doc.data()))
-    })
-  }, [])
+export const ListofCards = (props) => {
 
+const pets = props.pets
+  
 const renderCard = (a) => {
   return (<Card
     name={a.name}
