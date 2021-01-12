@@ -43,7 +43,7 @@ h2 {
 }
 
 .wrapper {
-  padding: 40px;
+  padding: 60px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ h2 {
 
 .innerwrapper {
   background-color: #FFFFFF;
-  width: 1440px;
+  max-width: 1440px;
   margin: auto;
 
 }
@@ -130,9 +130,10 @@ h2 {
 .list-of-cards {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
-  
+  max-width: 1248px;
+  margin: auto;
 }
 
 .list-of-cards-wrapper {
@@ -182,4 +183,11 @@ h2 {
   text-align: left;
   margin-left: 12px;
   max-width: 440px;
+}
+
+.credit {
+  background-color: #00b2ff;
+  text-align: center;
+  color: white;
+  max-height: 62px;
 }

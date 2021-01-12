@@ -23,7 +23,6 @@ const renderCard = (a) => {
         <div className="list-of-cards">
           {pets.map((pet) => (renderCard(pet)))}
         </div>
-        <button className="button button-primary">ZOBRAZIT VŠECHNY MAZLÍKY</button>
       </div>
     </>
   );

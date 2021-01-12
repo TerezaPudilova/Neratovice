@@ -7,7 +7,7 @@ export const Footer = () => {
     <>
       <div>
         <h2>Přijďte na návštěvu</h2>
-        <div class="basic-info">
+        <div className="basic-info">
           <div>
             <p>Jedlová 326, 277 11 Neratovice</p>
             <p>
@@ -20,7 +20,7 @@ export const Footer = () => {
           </div>
           <div>TODO-Mapa</div>
         </div>
-        <div>2020-Vytvořeno s láskou @TerezaPudilová</div>
+        <div className="credit">2020-Vytvořeno s láskou @TerezaPudilová</div>
       </div>
     </>
   );

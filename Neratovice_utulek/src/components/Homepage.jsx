@@ -49,8 +49,13 @@ useEffect(() => {
           <div>
             <h2>Aktuálně čeká na adopci 12 mazlíků</h2>
             <ListofCards 
-            pets = {pets}
+            pets = {pets.slice(0,3)}
             />
+            <div className="middle">
+              <Link to="/k-adopci">
+            <button className="button button-primary">ZOBRAZIT VŠECHNY MAZLÍKY</button>
+            </Link>
+            </div>
           </div>
           <div className="middle">
             <h2>V poslední době se stalo</h2>
